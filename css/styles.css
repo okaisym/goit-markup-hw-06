@@ -688,7 +688,6 @@ img {
     border: none;
     letter-spacing: 0.04em;
     position: relative;
-    padding-right: 24px;
     font-family: "Roboto" sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -697,11 +696,15 @@ img {
     color: #ffffff;
     cursor: pointer;
     position: relative;
+    padding-right: 64px;
+    padding-left: 24px;
 }
 
 .icon-send {
-    margin-left: 16px;
     position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .modal {
@@ -725,15 +728,12 @@ img {
     top: 150px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    border-color: #4D5AE5;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-left: 16px;
     outline: transparent;
     background-color: transparent;
     padding-left: 38px;
 }
-
-
 
 .modal-input:focus {
     border-color: #4D5AE5;
@@ -753,30 +753,35 @@ img {
 }
 
 .btn-form {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     left: 635px;
     top: 584px;
+    font-family: "Roboto" sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-    color: var(--btn-text);
+    color: #ffffff;
     margin-left: auto;
     margin-right: auto;
     margin-top: 24px;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-label {
     display: block;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.17px;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
     margin-bottom: 4px;
@@ -788,19 +793,20 @@ img {
     font-size: 12px;
     letter-spacing: 0.04em;
     color: #8E8F99;
+    line-height: 1.17;
 }
 
-.input-label-check span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.privacy-span {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    cursor: pointer;
-    margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
 
 .input-wrap {
@@ -837,12 +843,17 @@ img {
 }
 
 .input-content {
-    margin-bottom: 8px;
     position: relative;
+    margin-bottom: 26px;
 }
 
 .modal-input-checkbox:checked+.input-label-check span {
     background-color: #4D5AE5;
     border: none;
-    fill: #e7e9fc;
+    fill: #F4F4FD;
+}
+
+.link-policy {
+    color: #4D5AE5;
+    margin-left: 6px;
 }
