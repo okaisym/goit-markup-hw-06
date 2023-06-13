@@ -846,7 +846,11 @@ img {
 
 .input-content {
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
+}
+
+.input-content-comment {
+    margin-bottom: 16px;
 }
 
 .modal-input-checkbox:checked +.input-label-check span {
