@@ -593,6 +593,7 @@ img {
 
 .form-subscribe {
     display: flex;
+    gap: 24px;
 }
 
 .backdrop {
@@ -682,31 +683,32 @@ img {
     align-items: center;
     min-width: 165px;
     height: 40px;
-    margin-left: 24px;
-    background: #4D5AE5;
+    background-color: #4D5AE5;
     border-radius: 4px;
     border: none;
     letter-spacing: 0.04em;
     position: relative;
     padding-right: 24px;
-    font-family: "Roboto";
+    font-family: "Roboto" sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.04em;
+    line-height: 1.5;
     color: #ffffff;
     cursor: pointer;
+    position: relative;
 }
 
 .icon-send {
     margin-left: 16px;
+    position: absolute;
 }
 
-.modal-content {
+.modal {
     padding: 72px 24px 24px 24px;
 }
 
 .modal-form-text {
-    margin-top: 32px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -730,6 +732,8 @@ img {
     background-color: transparent;
     padding-left: 38px;
 }
+
+
 
 .modal-input:focus {
     border-color: #4D5AE5;
