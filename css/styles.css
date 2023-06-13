@@ -797,6 +797,10 @@ img {
     line-height: 1.17;
 }
 
+.input-content-check {
+    margin-bottom: 24px;
+}
+
 .privacy-span {
     width: 16px;
     height: 16px;
@@ -808,6 +812,7 @@ img {
     justify-content: center;
     fill: transparent;
     margin-right: 8px;
+    cursor: pointer;
 }
 
 .input-wrap {
